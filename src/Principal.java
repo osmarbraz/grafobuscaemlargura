@@ -6,7 +6,7 @@
  * Prof Alexandre Gonçalves da Silva 
  *
  * Baseado nos slides 51 da aula do dia 06/10/2017 
- * Realiza a Busca em Largura ou (Breadth-first Search).
+ * Realiza a Busca em Profundidade ou (Depth-first Search).
  */
 
 /**
@@ -17,12 +17,16 @@ import java.util.Queue;
 
 public class Principal {
 
-    final static int BRANCO = 0;//Não visitado
-    final static int CINZA = 1; //Visitado pela primeira vez
-    final static int PRETO = 2; //Teve seus visinhos visitados
+    //Busca em largura atribui cores a cada vértice. 
+    final static int BRANCO = 0;//Vértice não visitado. Inicialmente todos os vértices são brancos
+    final static int CINZA = 1; //Vértice visitado pela primeira vez
+    final static int PRETO = 2; //Vértice teve seus visinhos visitados
 
+    //Vetor da situação vértice, armazena uma das cores
     static int cor[];
+    //Armazena a distâncai de s a v
     static int d[];
+    //Vertor dos pais de um vértice
     static int pi[];
 
     /**
