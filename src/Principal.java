@@ -4,6 +4,7 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
+ *
  * Baseado nos slides 51 da aula do dia 06/10/2017 
  * Realiza a busca em Largura em um grafo
  */
@@ -73,7 +74,8 @@ public class Principal {
     }
 
     /**
-     * Busca em Largura em Grafo.
+     * Busca em Largura )Breadth-first Search)
+     * Complexidade de tempo é O(V+E)
      *
      * @param G Grafo na forma de uma matriz de adjacência
      * @param s Raiz da árvore de busca em largura
@@ -88,12 +90,15 @@ public class Principal {
         pi = new int[n];
 
         //Inicialização dos vetores
+        //Consome Theta(V)
         for (int i = 0; i < n; i++) {
+            //Vértice i não foi visitado
             cor[i] = BRANCO;
             d[i] = -1;
             pi[i] = -1;
         }
         //Inicializa a raiz do grafo
+        //O vértice s foi visitado pela primeira vez
         cor[s] = CINZA;
         d[s] = 0;
         pi[s] = -1;
@@ -107,8 +112,10 @@ public class Principal {
             System.out.println("Desemfileirando:" + trocar(u));
             for (int v = 0; v < n; v++) {
                 if (G[u][v] != 0) {
+                    //Verifica se v não foi visitado
                     if (cor[v] == BRANCO) {
                         System.out.println(">> Adjacente de " + trocar(u) + " = " + trocar(v));
+                        //V foi visitado pela primeira vez
                         cor[v] = CINZA;
                         d[v] = d[u] + 1;
                         pi[v] = u;
@@ -117,6 +124,7 @@ public class Principal {
                     }
                 }
             }
+            //O vértice u já teve seus vizinhos visitados
             cor[u] = PRETO;
         }
     }
