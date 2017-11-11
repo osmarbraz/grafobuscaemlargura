@@ -6,7 +6,7 @@
  * Prof Alexandre Gonçalves da Silva 
  *
  * Baseado nos slides 51 da aula do dia 06/10/2017 
- * Realiza a busca em Largura em um grafo
+ * Realiza a Busca em Largura ou (Breadth-first Search).
  */
 
 /**
@@ -74,11 +74,15 @@ public class Principal {
     }
 
     /**
-     * Busca em Largura )Breadth-first Search)
+     * Busca em Largura (Breadth-first Search).
+     * Constrói uma Árvore de Busca em Largura com raiz s. 
+     * Cada caminho de s a um vértice v nesta árvore
+     * corresponde a um caminho mais curto de s a v.
+     * 
      * Complexidade de tempo é O(V+E)
      *
      * @param G Grafo na forma de uma matriz de adjacência
-     * @param s Raiz da árvore de busca em largura
+     * @param s (Source) Fonte ou raiz da árvore de busca em largura
      */
     public static void buscaEmLargura(int[][] G, int s) {
         //Quantidade vértices do grafo
