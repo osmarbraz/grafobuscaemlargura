@@ -6,7 +6,7 @@
  * Prof Alexandre Gonçalves da Silva 
  *
  * Baseado nos slides 51 da aula do dia 06/10/2017 
- * Realiza a Busca em Profundidade ou (Depth-first Search).
+ * Realiza a Busca em Largura/Amplitude ou (Breadth-first Search).
  */
 
 /**
@@ -78,7 +78,7 @@ public class Principal {
     }
 
     /**
-     * Busca em Largura (Breadth-first Search).
+     * Busca em Largura/Amplitude (Breadth-first Search).
      * Constrói uma Árvore de Busca em Largura com raiz s. 
      * Cada caminho de s a um vértice v nesta árvore
      * corresponde a um caminho mais curto de s a v.
