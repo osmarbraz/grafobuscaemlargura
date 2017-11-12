@@ -6,6 +6,8 @@
  * Prof Alexandre Gonçalves da Silva 
  *
  * Baseado nos slides 51 da aula do dia 06/10/2017 
+ * Página 433 Cormen 3a Ed 
+ *
  * Realiza a Busca em Largura/Amplitude ou (Breadth-first Search).
  */
 
