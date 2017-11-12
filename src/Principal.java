@@ -122,7 +122,7 @@ public class Principal {
                 if (G[u][v] != 0) {
                     //Verifica se v não foi visitado
                     if (cor[v] == BRANCO) {
-                        System.out.println(">> Adjacente de " + trocar(u) + " = " + trocar(v));
+                        System.out.println("Adjacente de " + trocar(u) + " = " + trocar(v));
                         //V foi visitado pela primeira vez
                         cor[v] = CINZA;
                         d[v] = d[u] + 1;
@@ -141,9 +141,9 @@ public class Principal {
 
         //Matriz de incidência para um grafo não direcionado     
         //Grafo do slide 40
-        int G[][]
-               = //r  s  t  u  v  w  x  y    
-                {{0, 1, 0, 0, 1, 0, 0, 0},
+        int G[][] =
+               //r  s  t  u  v  w  x  y    
+               {{0, 1, 0, 0, 1, 0, 0, 0},
                 {1, 0, 0, 0, 0, 1, 0, 0},
                 {0, 0, 0, 1, 0, 1, 1, 0},
                 {0, 0, 1, 0, 0, 0, 1, 1},
@@ -157,12 +157,20 @@ public class Principal {
         // inicio s=1
         int inicio = destrocar('s');
         buscaEmLargura(G, inicio);
-
-        //Mostra o caminho
-        // destino v = 4
+       
+        //Mostra o caminho de s até y
+        // inicio s=1
+        inicio = destrocar('s');
+        // destino y = y
         int destino = destrocar('y');
         System.out.println();
         System.out.println("Mostrando o caminho de " + trocar(inicio) + " até " + trocar(destino));
         printPath(G, inicio, destino);
+
+        System.out.println();
+        System.out.println("Distância armarzenada d[x]");
+        for (int i = 0; i < G.length; i++) {
+            System.out.println(trocar(i) + "=" + d[i]);
+        }
     }
 }
