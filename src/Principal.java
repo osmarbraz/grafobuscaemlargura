@@ -121,6 +121,7 @@ public class Principal {
             int u = (int) q.poll();
             System.out.println("Desemfileirando:" + trocar(u));
             for (int v = 0; v < n; v++) {
+                //Somente com os adjancentes ao vértice u
                 if (G[u][v] != 0) {
                     //Verifica se v não foi visitado
                     if (cor[v] == BRANCO) {
