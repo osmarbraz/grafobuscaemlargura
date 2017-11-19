@@ -7,7 +7,7 @@
  *
  * Baseado nos slides 51 da aula do dia 06/10/2017 
  *
- * Página 433 Cormen 3a Ed 
+ * Página 433 Thomas H. Cormen 3a Ed 
  *
  * Grafo Busca em Largura/Amplitude ou Breadth-first Search(BFS).
  */
