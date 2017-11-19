@@ -9,7 +9,7 @@
  *
  * Página 433 Cormen 3a Ed 
  *
- * Realiza a Busca em Largura/Amplitude ou (Breadth-first Search).
+ * Grafo Busca em Largura/Amplitude ou Breadth-first Search(BFS).
  */
 
 /**
@@ -156,9 +156,9 @@ public class Principal {
                 {0, 0, 1, 1, 0, 1, 0, 1},
                 {0, 0, 0, 1, 0, 0, 1, 0}};
 
-        System.out.println("Busca em Largura / Amplitude");
+        System.out.println(">>> Grafo Busca em Largura/Amplitude ou Breadth-first Search(BFS) <<<");
 
-        // inicio s=1
+        //int inicio = 1
         int inicio = destrocar('s');
         buscaEmLargura(G, inicio);
        
