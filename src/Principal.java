@@ -29,7 +29,7 @@ public class Principal {
     static int cor[];
     //Armazena a distâncai de s a v
     static int d[];
-    //Vertor dos pais de um vértice
+    //Vetor dos pais de um vértice
     static int pi[];
 
     /**
@@ -38,13 +38,17 @@ public class Principal {
      * @param i Posição da letra
      * @return Uma String com a letra da posição
      */
-    public static String trocar(int i) {
-        String letras = "rstuvwxy";
-        return letras.charAt(i) + "";
+    public static String trocar(int i) {               
+        String letras = "rstuvwxy";        
+        if ((i >=0) && (i<=letras.length())) {
+            return letras.charAt(i) + "";
+        } else {
+            return "-";
+        }
     }
 
     /**
-     * Troca a letra pela posição na matriz de adjacência
+     * Troca a letra pela posição na matriz de adjacência.
      *
      * @param v Letra a ser troca pela posição
      * @return Um inteiro com a posição da letra no grafo
@@ -61,7 +65,7 @@ public class Principal {
     }
 
     /**
-     * Mostra o caminho de s até v no grafo G
+     * Mostra o caminho de s até v no grafo G.
      *
      * @param G Matriz de incidência do grafo
      * @param s Origem no grafo
@@ -82,6 +86,7 @@ public class Principal {
 
     /**
      * Busca em Largura/Amplitude (Breadth-first Search).
+     * 
      * Constrói uma Árvore de Busca em Largura com raiz s. 
      * Cada caminho de s a um vértice v nesta árvore
      * corresponde a um caminho mais curto de s a v.
@@ -174,7 +179,7 @@ public class Principal {
         System.out.println();
         System.out.println("Distância armarzenada d[x]");
         for (int i = 0; i < G.length; i++) {
-            System.out.println(trocar(i) + "=" + d[i]);
+            System.out.println(trocar(pi[i]) + "->" + trocar(i) + "=" + d[i]);
         }
     }
 }
