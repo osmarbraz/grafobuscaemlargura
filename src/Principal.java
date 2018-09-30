@@ -67,7 +67,7 @@ public class Principal {
     /**
      * Mostra o caminho de s até v no grafo G.
      *
-     * @param G Matriz de incidência do grafo
+     * @param G Matriz de adjacência do grafo
      * @param s Origem no grafo
      * @param v Destino no grafo
      */
@@ -148,18 +148,18 @@ public class Principal {
 
     public static void main(String args[]) {
 
-        //Matriz de incidência para um grafo não direcionado     
+        //Matriz de adjacência para um grafo não direcionado     
         //Grafo do slide 40
         int G[][] =
                //r  s  t  u  v  w  x  y    
-               {{0, 1, 0, 0, 1, 0, 0, 0},
-                {1, 0, 0, 0, 0, 1, 0, 0},
-                {0, 0, 0, 1, 0, 1, 1, 0},
-                {0, 0, 1, 0, 0, 0, 1, 1},
-                {1, 0, 0, 0, 0, 0, 0, 0},
-                {0, 1, 1, 0, 0, 0, 1, 0},
-                {0, 0, 1, 1, 0, 1, 0, 1},
-                {0, 0, 0, 1, 0, 0, 1, 0}};
+               {{0, 1, 0, 0, 1, 0, 0, 0}, //r
+                {1, 0, 0, 0, 0, 1, 0, 0}, //s
+                {0, 0, 0, 1, 0, 1, 1, 0}, //t
+                {0, 0, 1, 0, 0, 0, 1, 1}, //u
+                {1, 0, 0, 0, 0, 0, 0, 0}, //v
+                {0, 1, 1, 0, 0, 0, 1, 0}, //w
+                {0, 0, 1, 1, 0, 1, 0, 1}, //x
+                {0, 0, 0, 1, 0, 0, 1, 0}};//y
 
         System.out.println(">>> Grafo Busca em Largura/Amplitude ou Breadth-first Search(BFS) <<<");
 
