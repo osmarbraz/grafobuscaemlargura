@@ -8,4 +8,11 @@ Prof Alexandre Gonçalves da Silva <br>
 Baseado nos slides 51 da aula do dia 06/10/2017<br>
 Página 433 Thomas H. Cormen 3a Ed<br>
 <br>
-Realiza a Busca em Largura/Amplitude ou (Breadth-first Search).<br>
+Busca em Largura/Amplitude ou (Breadth-First Search).<br>
+Aplicações:<br>
+- Menor caminho em grafos sem peso<br>
+- Verificar se um grafo é bipartido<br>
+- Verificar se um grafo é bicolorável<br>
+- Alcançaabilidade<br>
+- Conectividade<br>
+- Etc...
