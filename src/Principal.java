@@ -177,7 +177,7 @@ public class Principal {
         mostrarCaminho(G, inicio, destino);
 
         System.out.println();
-        System.out.println("Distância armarzenada d[x]");
+        System.out.println("Distância armazenada d[x]");
         for (int i = 0; i < G.length; i++) {
             System.out.println(trocar(pi[i]) + "->" + trocar(i) + "=" + d[i]);
         }
