@@ -150,6 +150,7 @@ public class Principal {
 
         //Matriz de adjacência para um grafo não direcionado     
         //Grafo do slide 40
+        //Considere a ordem dos adjacentes pois muda a ordem da busca
         int G[][] =
                //r  s  t  u  v  w  x  y    
                {{0, 1, 0, 0, 1, 0, 0, 0}, //r
